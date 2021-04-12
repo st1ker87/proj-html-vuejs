@@ -4,3 +4,44 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+/* DEBUG */
+header {
+    background-color: lightcoral;
+}
+main {
+    background-color: lightcyan;
+    height: 100px;
+}
+footer{
+    background-color: palegreen;
+    height: 100px;
+}
+
+div {
+    border: 1px solid red;
+    height: 100px;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+}
+
+header .nav {
+    flex-grow: 2;
+}
+header .nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+/* MAIN */
+main {
+}
+
+/* FOOTER */
+footer {
+}
