@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* GENERAL */
@@ -14,14 +13,59 @@ body {
     display: flex;
 }
 
-.wrap_70 {
-    width: 70%;
+.wrap_80 {
+    width: 80%;
     margin: 0 auto;
 }
+
+.circle {
+    border-radius: 100%;
+}
+
+.btn {
+    height: 50px;
+    width: 260px;
+    margin: 30px 0 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #1fad96;
+    color: white;
+}
+.btn:hover {
+    background-color: #3F3A64;
+}
+
+/* FONT */
+.big_title {
+    font-size: 2.8em;
+    font-weight: 600;
+    color: #3F3A64;
+}
+
+.title {
+    font-size: 2.2em;
+    font-weight: 500;
+    color: #3F3A64;
+}
+
+.subtitle {
+    color: #8B89A2;
+}
+
+.smallTxt {
+    font-size: 0.8em;
+    color: #8B89A2;
+}
+
+.green {
+    color: #1fad96;
+}
+
 
 /* HEADER */
 header {
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     right: 0;
@@ -29,7 +73,7 @@ header {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-header .wrap_70 {
+header .wrap_80 {
     height: 80px;
     align-items: center;
 }
@@ -116,13 +160,72 @@ header .log_search .fa-search:hover {
 }
 
 /* MAIN */
+/* 1^ parte jumbo */
+#jumbo {
+    padding-top: 150px;
+}
+.jumbo_sx,
+.jumbo_dx {
+    flex-direction: column;
+    justify-content: center;
+}
+.jumbo_sx {
+    margin-right: 120px;
+}
+.jumbo_sx .btn i {
+    padding-right: 10px;
+}
+#jumbo .big_title {
+    margin-bottom: 15px;
+}
+
+.jumbo_dx {
+    position: relative;
+}
+.jumbo_dx .back {
+    position: absolute;
+    z-index: -1;
+}
+.jumbo_dx .greenStars {
+    right: 10%;
+    bottom: 10px;
+}
+.jumbo_dx .greyDots {
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.jumbo_dx .colorCircle {
+    top: 80px;
+    right: -100px;
+}
+.jumbo_dx .sandCircle {
+    height: 60px;
+    width: 60px;
+    border: 8px solid #ECC5AC;
+    top: 65%;
+    left: -60px;
+}
+
+/* 2^ parte loghi affiliates */
+ #affiliates{
+     margin: 40px auto;
+     justify-content: space-around;
+     align-items: center;
+}
+#affiliates img {
+    opacity: 0.5;
+}
+
+#affiliates img:hover {
+    opacity: 1;
+}
 
 
 /* FOOTER */
 
 /* DEBUG */
 main {
-    background-color: lightcyan;
     height: 2000px;
 }
 footer{
