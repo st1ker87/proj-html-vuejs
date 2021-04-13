@@ -5,28 +5,37 @@
     font-family: sans-serif;
 }
 
-/* DEBUG */
-header {
-    background-color: lightcoral;
-}
-main {
-    background-color: lightcyan;
-    height: 100px;
-}
-footer{
-    background-color: palegreen;
-    height: 100px;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-div {
-    border: 1px solid red;
-    height: 100px;
+/* GENERAL */
+.flex {
+    display: flex;
 }
 
+.wrap_70 {
+    width: 70%;
+    margin: 0 auto;
+}
 
 /* HEADER */
 header {
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+header .wrap_70 {
+    height: 80px;
+    align-items: center;
+}
+
+header .logo img {
+    height: 25px;
 }
 
 header .nav {
@@ -37,11 +46,86 @@ header .nav ul {
     justify-content: flex-end;
     list-style: none;
 }
-
-/* MAIN */
-main {
+header .nav ul li::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 900;
+    content: "\f078";
+    margin-left: 10px;
+}
+header .nav ul li {
+    margin: 0 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+header .nav ul li a {
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: black;
+}
+header .nav ul li:hover{
+    color: #1fad96;
+    border-bottom: 1px solid #1fad96;
+}
+header .nav ul li:hover a{
+    color: #1fad96;
 }
 
+header .user {
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+header .user:hover{
+    color: #1fad96;
+}
+
+header .log_search {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+header .log_search input {
+    height: 50px;
+    width: 100%;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+header .log_search input:focus {
+    outline: none;
+    border: 1px solid #1fad96;
+}
+header .log_search .fa-search {
+    position: absolute;
+    right: 1px;
+    height: 48px;
+    width: 50px;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    line-height: 50px;
+    text-align: center;
+    color: #1fad96;
+    cursor: pointer;
+}
+header .log_search .fa-search:hover {
+    color: white;
+    background-color: #1fad96;
+}
+
+/* MAIN */
+
+
 /* FOOTER */
-footer {
+
+/* DEBUG */
+main {
+    background-color: lightcyan;
+    height: 2000px;
+}
+footer{
+    background-color: palegreen;
+    height: 100px;
 }

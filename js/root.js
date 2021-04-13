@@ -11,7 +11,8 @@ var app = new Vue({
                 'Features',
                 'Blog',
                 'Shop'
-            ]
+            ],
+            user: '<i class="far fa-user-circle"></i>'
         },
         footer: {
             lists: [
@@ -32,7 +33,7 @@ var app = new Vue({
                     'Contact us'
                 ],
                 [
-                    'Information'
+                    'Information',
                     'Membership',
                     'Purchase guide',
                     'Privacy policy',
