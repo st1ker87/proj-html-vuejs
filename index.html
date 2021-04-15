@@ -89,7 +89,7 @@
             <!-- terza section del main: online courses -->
             <section id="online_courses">
                 <div class="wrap_70 flex">
-                    <div class="centerd">
+                    <div class="centered">
                         <p class="subtitle upper">stimulated to learn?</p>
                         <p class="title">Featured Online Courses</p>
                     </div>
@@ -154,7 +154,7 @@
             <!-- quarta section del main: smart tutoring -->
             <section id="smart_tutoring">
                 <div class="wrap_70">
-                    <div class="centerd">
+                    <div class="centered">
                         <p class="subtitle upper">maxcoach available courses</p>
                         <p class="title">Access <span class="green thin">Smart Tutoring</span> Program For Benefits.</p>
                     </div>
@@ -207,7 +207,7 @@
 
             <!-- sesta section del main: user's feedback -->
             <section id="feedback">
-                <div class="centerd">
+                <div class="centered">
                     <p class="subtitle upper">great words about maxcoach</p>
                     <p class="title">Our <span class="green thin">top learners'</span> verbatim</p>
                 </div>
@@ -267,7 +267,7 @@
                     </div>
                 </div> 
                 <div id="get_started">
-                    <div class="centerd">
+                    <div class="centered">
                         <p class="little_title ">Start today for getting <span class="green thin">Online Certification</span></p>
                         <p class="title">You can be your own guiding star with our help!</p>
                         <button class="btn">Get started now</button>
@@ -334,6 +334,14 @@
 
             <!-- nona section del main: newsletter -->
             <section id="newsletter">
+                <div class="centered">
+                    <p class="title">Subscribe <span class="green thin">Newsletter</span></p>
+                    <p class="subtitle">Enter your email address to register to our newsletter subscription delivere on a regular basis!</p>
+                    <div class="flex mail_box">
+                        <input class="mail" type="text" placeholder="Enter your email">
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </div>
 
             </section>
 
@@ -342,7 +350,21 @@
 
         <!-- inizio footer -->
         <footer>
-
+            <div class="wrap_70">
+                <div class="container flex">
+                    <ul class="adress ">
+                        <li v-for="line in footer.lists.adress">{{line}}</li>
+                        <li v-html="footer.lists.adressLink"></li>
+                    </ul>
+                    <ul class="explore ">
+                        <li v-for="item in footer.lists.explore">{{item}}</li>
+                    </ul>
+                    <ul class="information ">
+                        <li v-for="info in footer.lists.information">{{info}}</li>
+                    </ul>
+                </div>
+                <div class="centered credits smallTxt">{{ footer.credits }}</div>
+            </div>
         </footer> <!-- fine footer -->
 
     </div>
