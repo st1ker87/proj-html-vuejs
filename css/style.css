@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+margin: 0;
     padding: 0;
     box-sizing: border-box;
     
@@ -11,7 +11,7 @@
 
 /* GENERAL */
 section {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .flex {
@@ -35,6 +35,7 @@ section {
     border-radius: 5px;
     background-color: #1fad96;
     color: white;
+    cursor: pointer;
 }
 .btn:hover {
     background-color: #3F3A64;
@@ -79,6 +80,9 @@ section {
 .green {
     color: #1fad96;
 }
+.green.thin {
+    font-weight: 300;
+}
 .green_big {
     color: #1fad96;
     font-size: 1.5em;
@@ -90,6 +94,10 @@ section {
 .centerd {
     text-align: center;
 
+}
+
+.little {
+    font-size: 0.9em;
 }
 
 
@@ -358,7 +366,23 @@ header .log_search .fa-search:hover {
 }
 
 /* 5^ parte companionship */
+#companionship {
+    position: relative;
+    background-color: #F8F8F8;
+    padding: 0;
+    z-index: 0;
+}
+#companionship .container_radius {
+    position: relative;
+    padding: 100px 0;
+    height: 100%;
+    border-radius: 0 0 60% 0;
+    background-color: white;
+    z-index: 1;
+}
+
 #companionship .wrap_70 {
+    position: relative;
     align-items: center;
 }
 #companionship .videoBox {
@@ -382,7 +406,7 @@ header .log_search .fa-search:hover {
     left: -10%;
 }
 #companionship .stars {
-    top: 90%;
+    top: 80%;
     right: -8%;
 }
 
@@ -396,9 +420,6 @@ header .log_search .fa-search:hover {
 #companionship .blue {
     color: #3F3A64;
     font-weight: 500;
-}
-#companionship .green {
-    font-weight: 300;
 }
 #companionship .text {
     color: #8B89A2;
@@ -419,7 +440,158 @@ header .log_search .fa-search:hover {
 
 #companionship .link:hover {
     border-bottom: 1px solid #1fad96;
+}
 
+/* 6^ parte user's feedback */
+#feedback {
+    background-color: #F8F8F8;
+}
+#feedback .cards {
+    justify-content: space-around;
+    position: relative;
+}
+#feedback .card {
+    width: 29%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 5px;
+}
+#feedback .card.on {
+    opacity: 1;
+}
+#feedback .card.off {
+    opacity: 0.6;
+}
+#feedback .card_title {
+    color: #3F3A64;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 2em;
+}
+#feedback .card_text {
+    margin: 20px 0;
+    line-height: 1.8em;
+    color: #696969;
+}
+#feedback .card_contact img {
+    height: 80px;
+    margin-right: 20px;
+}
+#feedback .contact_info {
+    flex-direction: column;
+    justify-content: space-around;
+}
+#feedback .contact_info .contact_name {
+    color: #3F3A64;
+    font-weight: 500;
+}
+#feedback .cards .nav_cards {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+}
+#feedback .cards .nav_cards .fa-circle {
+    margin: 0 10px;
+    font-size: 0.7em;
+    color: #B7B5C4;
+}
+#feedback .cards .nav_cards .fa-circle:not(.active):hover {
+    font-size: 1em;
+    color: #3F3A64;
+    transition: 0.2s;
+}
+#feedback .cards .nav_cards .active {
+    font-size: 1em;
+    color: #3F3A64;
+}
+/* #get_started */
+#get_started {
+    padding-top: 100px;
+    background-color: #F8F8F8;
+}
+#get_started .little_title {
+    font-size: 1.4em;
+}
+#get_started .title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#get_started .btn {
+    margin: 20px;
+}
+
+/* 7^ parte numbers */
+#numbers {
+    padding: 0;
+}
+#numbers .cards {
+    height: 100%;
+}
+#numbers .cards .card {
+    width: 25%;
+    padding: 100px 40px;
+    border-left: 1px solid #F5F1ED;
+    text-align: center;
+}
+#numbers .cards .card:last-child {
+    border-right: 1px solid #F5F1ED;
+}
+#numbers .little_title {
+    font-size: 1.4em;
+}
+#numbers .big_number {
+    margin-top: 30px;
+    font-size: 4em;
+    font-weight: 700;
+    color: #1fad96;
+}
+#numbers .subtitle {
+    font-weight: 500;
+}
+
+/* 8^ parte most viewed */
+#most_viewed {
+    background-color: #F5F1ED;
+}
+#most_viewed .blog_insights {
+    padding-top: 15px;
+}
+#most_viewed ul {
+    list-style: none;
+    color:#3F3A64;
+    font-weight: 600;
+}
+#most_viewed li {
+    margin: 15px 0;
+    line-height: 2em;
+}
+#most_viewed li:before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    font-weight: 900;
+    content: "\f30b";
+    margin-right: 10px;
+}
+#most_viewed li i {
+    margin-right: 10px;
+}
+#most_viewed .blog {
+    width: 30%;
+    margin: 0  20px;
+    background-color: white;
+}
+#most_viewed .blog img {
+    max-width: 100%;
+}
+#most_viewed .blog .blog_info {
+    padding: 20px;
+    flex-direction: column;
+}
+#most_viewed .blog .blog_info .little_title {
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 
